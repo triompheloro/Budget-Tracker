@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <h1 class="Lohateny">Budget Tracker</h1>
+        <h2>Easiest Way To Track Your Transactions!</h2>
+      </section>
+
+      <section class="transaction-manager">
+        <div class="addTransaction">
+          <h1 class="addTitle">Add Transaction</h1>
+          <form class="addForm">
+            <input
+              type="text"
+              placeholder="Source"
+              class="addSource"
+              name="Source"
+            />
+            <input
+              type="number"
+              placeholder="Amount"
+              class="addAmount"
+              step="0.001"
+              name="Amount"
+            />
+            <button type="submit" class="confirmAdd">Add Transaction</button>
+          </form>
+        </div>
+        <div class="statistics">
+          <h1 class="statTitle">Statisics</h1>
+          <ul class="statContent">
+            <li class="content statBalance">Blance: $ <span class="balance"></span> </li>
+            <li class="content statIncome">Income: $ <span class="in"></span></li>
+            <li class="content statExpense">Expense: $ <span class="out"></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="history">
+        <h1 class="histTitle">Transaction History</h1>
+        <div class="transDetails">
+          <div class="left">
+            <h2 class="IncomeTitle">Incomes</h2>
+            <ul class="incomes">
+            </ul>
+          </div>
+          <div class="right">
+            <h2 class="IncomeTitle">Expenses</h2>
+            <ul class="expenses">
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
